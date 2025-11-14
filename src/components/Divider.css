@@ -1,11 +1,11 @@
 .divider {
   width: 370px;
-  height: 20px;
+  height: 1px;
   box-sizing: border-box;
   opacity: 1;
   display: flex;
   align-items: center;
-  padding-inline: 15px;
+  padding: 9.5px 15px;
 }
 
 .divider-line {
