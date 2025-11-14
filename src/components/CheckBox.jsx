@@ -2,12 +2,11 @@ import { useState } from "react";
 import "./CheckBox.css";
 import CheckIcon from "./icons/CheckIcon";
 
-export default function CheckBox() {
-  const [isChecked, setIsChecked] = useState(false);
+export default function CheckBox({ checked, onToggle }) {
   const [isHovered, setIsHovered] = useState(false);
 
-   const getIconColor = () => {
-    if (isChecked) {
+  const getIconColor = () => {
+    if (checked) {
       return isHovered ? "#E3E3E3" : "#FFFFFF";
     }
     return "#878787";
@@ -15,12 +14,12 @@ export default function CheckBox() {
 
   return (
     <div
-      className={`checkbox ${isChecked ? "checked" : ""}`}
-      onClick={() => setIsChecked(!isChecked)}
+      className={`checkbox ${checked ? "checked" : ""}`}
+      onClick={onToggle}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {isChecked && <CheckIcon color={getIconColor()} id="check-icon" />}
+      {checked && <CheckIcon color={getIconColor()} id="check-icon" />}
     </div>
   );
 }
