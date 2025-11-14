@@ -1,4 +1,4 @@
-.container {
+.button {
   width: 340px;
   height: 40px;
   background-color: #FFCE22;
@@ -8,11 +8,11 @@
   border: none;
 }
 
-.container:hover {
+.button:hover {
   background-color: #FFD84D;
 }
 
-.container:active {
+.button:active {
   background-color: #FFCE22;
   transform: translateY(0.5px);
 }
