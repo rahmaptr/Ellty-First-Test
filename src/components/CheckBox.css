@@ -1,7 +1,41 @@
-.container {
+.checkbox {
   width: 23px;
   height: 23px;
   border: 1px solid #CDCDCD;
   border-radius: 6px;
   opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.15s ease;
+}
+
+.checkbox:hover {
+  border: 1px solid #BDBDBD;
+  opacity: 1;
+}
+
+.checkbox:hover:not(.checked) {
+  box-shadow: 0 0 0 3px #2369F61A;
+}
+
+.checkbox.checked {
+  background: #2369F6;
+  border-color: #2369F6;
+  opacity: 1;
+}
+
+.checkbox.checked:hover {
+  background-color: #5087F8;
+  border-color: #5087F8;
+  opacity: 1;
+}
+
+#check-icon {
+  transition: color 0.15s ease;
 }
