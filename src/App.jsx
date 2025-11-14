@@ -1,13 +1,13 @@
 import './App.css'
 import Button from './components/Button'
-import CheckBox from './components/CheckBox'
+import CheckboxItem from './components/CheckboxItem'
 
 function App() {
   return (
     <>
       <h1>Vite + React</h1>
       <Button text='Done'/>
-      <CheckBox />
+      <CheckboxItem />
     </>
   )
 }
